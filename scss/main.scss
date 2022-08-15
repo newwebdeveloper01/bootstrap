@@ -1,5 +1,22 @@
+//  @import "../node_modules/bootstrap/scss/bootstrap.scss";
  @import "variabel";
  @import "normalize";
  @import "fonts";
  @import "generals";
  @import "block/blocks";
+
+ @import "../node_modules/bootstrap/scss/functions";
+ @import "../node_modules/bootstrap/scss/variables";
+
+ $meni_rangim:(
+    'primary':red,
+    'danger':yellow,
+    'success':blue
+ );
+
+$body-bg:rgb(123, 66, 222);
+$body-color:white;
+
+ $theme-colors:map-merge($theme-colors,$meni_rangim);
+
+ @import "../node_modules/bootstrap/scss/bootstrap.scss";
